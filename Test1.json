@@ -1,3 +1,6 @@
+<html>
+<head></head>
+<body>
 [
     {
         "action": "talk",
@@ -5,3 +8,6 @@
         "text": "Hi, this is Bryan. You are listening to a text-to-speech Call made with Nexmo's Voice API. This call was brought to you by the letter B, for Bounce Software."
     }
 ]
+
+</body>
+</html>
