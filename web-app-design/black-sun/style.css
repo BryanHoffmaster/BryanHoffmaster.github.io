@@ -1,0 +1,332 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	/* minty-white */
+	background: #eafdff;
+}
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sun-container {
+	/* absolute captures the absolute position of the rays */
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .sun-rotation-container {
+	height: 200px;
+	width: 200px;
+	/* Exaggerated over rotation on the back end of the rotation */
+	animation: rotateSun cubic-bezier(.86,.33,.01,1.42) 10s infinite
+}
+
+@keyframes rotateSun {
+
+	0%,
+	55%,100% {
+		transform: rotate(0deg)
+	}
+
+	85% {
+		transform: rotate(360deg)
+	}
+}
+
+.sun-container.one {
+	animation: animateRayOne ease-in-out 2s infinite;
+}
+
+@keyframes animateRayOne {
+
+	0%,
+	100% {
+		transform: rotate(-2deg);
+	}
+
+	50% {
+		transform: rotate(2deg);
+	}
+}
+
+.sun-container.two {
+	transform: rotate(45deg);
+	animation: animateRayTwo ease-in-out 2s infinite;
+}
+
+@keyframes animateRayTwo {
+
+	0%,
+	100% {
+		transform: rotate(43deg);
+	}
+
+	50% {
+		transform: rotate(45deg);
+	}
+}
+
+.sun-container.three {
+	transform: rotate(90deg);
+	animation-delay: -1s;
+	animation: animateRayThree ease-in-out 1s infinite;
+}
+
+@keyframes animateRayThree {
+
+	0%,
+	100% {
+		transform: rotate(88deg);
+	}
+
+	50% {
+		transform: rotate(90deg);
+	}
+}
+
+.sun-container.four {
+	transform: rotate(135deg);
+	animation: animateRayFour ease-in-out 3.5s infinite;
+}
+
+@keyframes animateRayFour {
+
+	0%,
+	100% {
+		transform: rotate(133deg);
+	}
+
+	50% {
+		transform: rotate(135deg);
+	}
+}
+
+.sun-container.five {
+	transform: rotate(180deg);
+	animation: animateRayFive ease-in-out 2s infinite;
+}
+
+@keyframes animateRayFive {
+
+	0%,
+	100% {
+		transform: rotate(178deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+}
+
+.sun-container.six {
+	transform: rotate(225deg);
+	animation: animateRaySix ease-in-out 3s infinite;
+}
+
+@keyframes animateRaySix {
+
+	0%,
+	100% {
+		transform: rotate(223deg);
+	}
+
+	50% {
+		transform: rotate(225deg);
+	}
+}
+
+.sun-container.seven {
+	transform: rotate(270deg);
+	animation-delay: -1s;
+	animation: animateRaySeven ease-in-out 2s infinite;
+}
+
+@keyframes animateRaySeven {
+
+	0%,
+	100% {
+		transform: rotate(268deg);
+	}
+
+	50% {
+		transform: rotate(270deg);
+	}
+}
+
+.sun-container.eight {
+	transform: rotate(315deg);
+	animation: animateRayEight ease-in-out 4s infinite;
+}
+
+.sun-container.eight:hover {
+	transform: rotateY(180deg);
+}
+
+@keyframes animateRayEight {
+
+	0%,
+	100% {
+		transform: rotate(313deg);
+	}
+
+	50% {
+		transform: rotate(315deg);
+	}
+}
+
+
+.black-sun {
+	position: relative;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background: rgba(0, 0, 0, .65);
+	z-index: 2;
+}
+
+/* Rays have their cut out from the ::before circle */
+.sun-ray::before {
+	position: absolute;
+	top: 51px;
+	left: -76px;
+	content: '';
+	height: 160px;
+	width: 160px;
+	border-radius: 50%;
+	background: #eafdff;
+}
+
+/* creates the long ray streak, associated with eay sun ray */
+.sun-ray::after {
+	content: "";
+	left: 30px;
+	top: -50px;
+	width: 2px;
+	border-radius: 50%;
+	height: 95px;
+	position: absolute;
+	background-color: rgba(0, 0, 0, .65);
+
+	transform: rotate(20deg) scaleY(0);
+	transform-origin: bottom;
+	transition: transform 150ms ease-in;
+	animation: rayStreak linear 3s infinite;
+	z-index: -1;
+}
+
+.sun-ray.one::after {
+	height: 150px;
+	animation-delay: 5s;
+	top: -115px;
+	left: 35px;
+}
+
+.sun-ray.two::after {
+	height: 70px;
+	animation-delay: 1s;
+	top: -30px;
+	left: 35px;
+}
+
+.sun-ray.three::after {
+	height: 200px;
+	animation-delay: 3s;
+	left: 28px;
+	top: -140px;
+}
+
+.sun-ray.four::after {
+	height: 45px;
+	animation-delay: 6s;
+	left: 45px;
+	top: -30px;
+}
+
+.sun-ray.five::after {
+	height: 75px;
+	animation-delay: 7s;
+	left: 30px;
+	top: -25px;
+}
+
+.sun-ray.six::after {
+	height: 125px;
+	animation-delay: 3.5s;
+	left: 40px;
+	top: -100px;
+}
+
+.sun-ray.seven::after {
+	height: 70px;
+	animation-delay: .5s;
+	left: 35px;
+	top: -30px;
+}
+
+.sun-ray.eight::after {
+	height: 90px;
+	animation-delay: 1.5s;
+	left: 45px;
+	top: -75px;
+}
+
+@keyframes rayStreak {
+
+	/* for the first 95% do nothing, this creates the timer effect. */
+	0%,
+	95% {
+		transform: rotate(20deg) scaleY(0);
+		transform-origin: bottom;
+	}
+
+	100% {
+		transform: rotate(20deg) scaleY(1);
+		transform-origin: bottom;
+	}
+}
+
+.sun-ray {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 65px solid rgba(0, 0, 0, .65);
+	top: 0;
+	left: 0;
+	transform: rotate(314deg);
+	z-index: 1;
+}
+
+
+/* Shadow */
+.sun-shadow {
+	position: absolute;
+	width: 150px;
+}
+
+.container .sun-shadow::before {
+	content: '';
+	position: absolute;
+	bottom: -185px;
+	left: -50%;
+	width: 200%;
+	height: 40px;
+	border-radius: 50%;
+	background: radial-gradient(rgba(0, 0, 0, .1), transparent, transparent);
+}
