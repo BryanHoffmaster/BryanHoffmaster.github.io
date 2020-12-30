@@ -6,8 +6,7 @@
 
 body {
 	display: flex;
-	/* minty-white */
-	background: #eafdff;
+
 }
 
 .container {
@@ -16,6 +15,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	/* minty-white */
+	background: #eafdff;
 }
 
 .sun-container {
@@ -32,13 +33,14 @@ body {
 	height: 200px;
 	width: 200px;
 	/* Exaggerated over rotation on the back end of the rotation */
-	animation: rotateSun cubic-bezier(.86,.33,.01,1.42) 10s infinite
+	animation: rotateSun cubic-bezier(.86, .33, .01, 1.42) 10s infinite
 }
 
 @keyframes rotateSun {
 
 	0%,
-	55%,100% {
+	55%,
+	100% {
 		transform: rotate(0deg)
 	}
 
