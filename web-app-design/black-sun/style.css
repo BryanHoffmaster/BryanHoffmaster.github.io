@@ -17,6 +17,7 @@ body {
 	align-items: center;
 	/* minty-white */
 	background: #eafdff;
+	overflow: hidden;
 }
 
 .sun-container {
