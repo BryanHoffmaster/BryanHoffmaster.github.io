@@ -4,7 +4,58 @@
 	box-sizing: border-box;
 }
 
-.header{
-	font-size: 25px;
-	color: salmon;
+:root {
+	background-color: #000 !important;
+}
+
+/* TODO: Grid/Flexbox layout - fill content */
+body {
+	background-color: #000
+}
+
+
+/* TODO: Change this typeface */
+#console {
+	font-family: courier, monospace;
+	color: #fff;
+	width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+	font-size:14px;
+}
+
+a {
+	color: #0bc;
+	text-decoration: none;
+}
+
+.cli-prompt {
+	color: #0f0;
+}
+
+.prompt-dollar-sign {
+	color: #0bc;
+}
+
+.prompt-tilde {
+	color: #ff0096;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.slow-change-animation {
+    	animation: change 1s;
+}
+
+#op{
+    	color: #888888
+}
+
+@keyframes change {
+    	0%  { color:  #0f0; }
+    	50% { color:  #0f0; }
+    	99% { color: black; }
 }
