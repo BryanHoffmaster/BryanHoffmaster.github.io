@@ -6,15 +6,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style.css">
 	<!-- TODO: Clean this garbage out.-->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+	<script type="text/javascript" src="./index.js"></script>
 	<title>Bryan Hoffmaster CLI</title>
 </head>
 
 <body>
-	<script type="text/javascript"	src="./index.js"></script>
 	<div id="display">
 		<div id="content"></div>
-		<input type="text" id="console">
+		<div id="prompt-wrapper">
+			<label for="cli_input" id="cli_prompt">
+				<span class="cli-prompt">bryan.hoffmaster@HAL9000</span>:<span class="prompt-tilde">~</span><span
+					class="prompt-dollar-sign">$</span>
+			</label>
+			<input name="cli_input" type="text" id="cli_input">
+		</div>
 	</div>
 </body>
 

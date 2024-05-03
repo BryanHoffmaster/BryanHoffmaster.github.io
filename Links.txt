@@ -1,0 +1,3 @@
+$!link=animations/black-sun/index.html * Rotating Dark Star
+$!link=animations/glassmorphism/spinner-effects/index.html * Glassmorphism
+	

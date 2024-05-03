@@ -1,107 +1,55 @@
-<span class="cli-prompt">bryan.hoffmaster@HAL9000</span>:<span class="prompt-tilde">~</span>
-    <span class="prompt-dollar-sign">$</span> cd BryanHoffmaster/Engineer_Files
+#@# cd BryanHoffmaster/Engineer_Files
+#@# cat introduction.txt
 
+Hey There! Welcome to my humble engineer page.
 
-	<span class="cli-prompt">bryan.hoffmaster@HAL9000</span>:<span class="prompt-tilde">~</span><span
-		class="prompt-dollar-sign">$</span> cat introduction.txt
+I'm an avid full stack web developer, with a passion for creating great looking web pages, user interfaces, APIs,
+and databases on cloud systems and more! 
 
-	<p>Hey There! Welcome to my humble engineer page.</p>
+Most of my professional work has been done with internal systems for companies large and small, but I soon realized
+that I don't have much in the way of outreach and visible work for others to seen and enjoy. So I've decided to
+push that envelope and create my own personal website, of which this page is going to be the start!
 
-	<p>I'm an avid full stack web developer, with a passion for creating great looking web pages, user interfaces, APIs,
-		and databases on cloud systems and more! </p>
+What are my skill sets I hear you say? Let's take a look!
 
-	<p>Most of my professional work has been done with internal systems for companies large and small, but I soon
-		realized
-		that I don't have much in the way of outreach and visible work for others to seen and enjoy. So I've decided to
-		push that envelope and create my own personal website, of which this page is going to be the start!
-	</p>
+Full Stack Web Development - Angular (v7-17) - Angular Material - JS/HTML/CSS5
+Git - GitLab - RxJS - C# - React & ReactNative - Team Leader and Educator
+CI/CD Workflows - Google Cloud Platform (GCP)/Firebase - jQuery
+Cypress/Jasmine E2E and Unit Testing - Node.js - RESTful APIs
+SQL/NoSQL - Linux/Windows Desktop and Server Administration 
+Customer Service - Public Speaking
 
-	<!-- Skill Sets Section -->
-	<p>What are my skill sets I hear you say? Let's take a look!</p>
-	<ul class="skill-set-list">
-		<li>Full Stack Web Development</li>
-		<li>Angular (v7-17)</li>
-		<li>Angular Material</li>
-		<li>JS/HTML/CSS5</li>
-		<li>Git</li>
-		<li>GitLab</li>
-		<li>RxJS</li>
-		<li>C#</li>
-		<li>React & ReactNative</li>
-		<li>Team Leader and Educator</li>
-		<li>CI/CD Workflows</li>
-		<li>Google Cloud Platform (GCP)/Firebase</li>
-		<li>jQuery</li>
-		<li>Cypress/Jasmine E2E and Unit Testing</li>
-		<li>Node.js</li>
-		<li>RESTful APIs</li>
-		<li>SQL/NoSQL</li>
-		<li>Linux/Windows Desktop and Server Administration</li>
-		<li>Customer Service</li>
-		<li>Public Speaking</li>
-		<li></li>
-	</ul>
+#@# cat favorite_quotes.txt
 
-	<!-- Favorite Quotes  -->
-	<span class="cli-prompt">bryan.hoffmasterHAL9000</span>:<span class="prompt-tilde">~</span><span
-		class="prompt-dollar-sign">$</span> cat favorite_quotes.txt
+Some of my favorite quotes:
 
-	<p>Some of my favorite quotes:
-	<ul>
-		<li>
-			"<span class="slow-change-animation italic">Fear is a mile wide, and an inch deep.</span>"
-		</li>
-		<li>
-			"<span class="slow-change-animation italic">If you can be in a bad mood for no reason, you can be in a good
-				mood for no reason. If it's not going to change your life then it shouldn't change your mood. If the
-				cost is peace of mind, don't buy it.</span>"
-		</li>
-		<li>
-			"<span class="slow-change-animation italic">
-				Your first workout will be bad.
-				Your first podcast will be bad.
-				Your first speech will be bad.
-				Your first video will be bad.
-				Your first ANYTHING will be bad.
-				But you can't make your 100th without making your first.
-				So put your ego aside, and start.</span>"
-		</li>
-	</ul>
+"Fear is a mile wide, and an inch deep."
+	
+"If you can be in a bad mood for no reason, you can be in a good mood for no reason. 
+If it's not going to change your life then it shouldn't change your mood. If the cost is peace of mind, don't buy it."
+	
+Your first workout will be bad.
+Your first podcast will be bad.
+Your first speech will be bad.
+Your first video will be bad.
+Your first ANYTHING will be bad.
+But you can't make your 100th without making your first.
+So put your ego aside, and start.
 
-	</p>
+#@# cat professional_works.txt
 
-	<!-- Professional Works  -->
-	<span class="cli-prompt">bryan.hoffmasterHAL9000</span>:<span class="prompt-tilde">~</span><span
-		class="prompt-dollar-sign">$</span> cat professional_works.txt
+Want to see some more of my work?
 
-	<!-- See work I've done -->
-	<p>Want to see some more of my work?
-		<br><br>
-		Fun Animations:
-	<ul>
-		<li>
-			<a href="link">Rotating Dark Star</a>.
-			<a href="link">Glassmorphism</a>.
-		</li>
-	</ul>
-	<br><br>
-	Professional Content:
-	<ul>
-		<li><a href="link">Professional Website (UNDER CONSTRUCTION)</a></li>
-		<li><a href="link">Blog Posts (UNDER CONSTRUCTION)</a></li>
-		<li><a href="https://github.com/BryanHoffmaster">Github Page</a></li>
-		<li><a href="https://github.com/BryanHoffmaster/BryanHoffmaster.github.io">This resume type web page</a></li>
-		<li>More to come...</li>
-	</ul>
-	</p>
+Fun Animations:
+$!link=animations/black-sun/index.html * Rotating Dark Star
+$!link=animations/glassmorphism/spinner-effects/index.html * Glassmorphism
+	
+Professional Content:
 
-	<p> You can give links to other professional profiles you have on Internet, here: <br> <a href="link1">Profile1</a>
-		<br> <a href="link2">Profile2</a> and <br> <a href="link3">Profile3</a>.
-	</p>
+* Professional Website (UNDER CONSTRUCTION)
+* Blog Posts (UNDER DEVELOPMENT)
+$!link=https://github.com/BryanHoffmaster * Github Page
+$!link=https://github.com/BryanHoffmaster/BryanHoffmaster.github.io * This resume type web page
+* More to come...
 
-	<p>
-		You can also give your email ID for contacting you, feel free to send me an email at<a
-			href="Your email ID">Email</a>.
-	</p>
-
-	<p>Cheers!</p>
+Cheers!

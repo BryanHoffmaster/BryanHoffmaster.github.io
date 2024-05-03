@@ -10,7 +10,8 @@
 
 /* TODO: Grid/Flexbox layout - fill content */
 body {
-	background-color: #000
+	background-color: #000;
+	color: #fff;
 }
 
 
@@ -28,6 +29,10 @@ body {
 a {
 	color: #0bc;
 	text-decoration: none;
+}
+
+p {
+	min-height: 1ch;
 }
 
 .cli-prompt {
