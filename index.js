@@ -8,6 +8,7 @@
 // TODO: use emojis in your text?? Like add a fire emoji to skills that I'm great at.
 // TODO: "Headers" with markdown type formatting?
 // TODO: "Centered text" - will need a another line prefix, maybe.
+// TODO: Set max-width to 120ch on display and update text file lines to fit that requirement.
 
 // NOTE: Inspired to do this from here: https://github.com/CodeNerve/CodeNerve.github.io/tree/master
 
