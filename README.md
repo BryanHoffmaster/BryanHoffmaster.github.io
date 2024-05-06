@@ -1,6 +1,6 @@
 # BryanHoffmaster.github.io
 
-This is a personal website page that was inspired by [this repo here](https://github.com/CodeNerve/CodeNerve.github.io/tree/masterZ). 
+This is a personal website page that was inspired by [this repo here](https://github.com/CodeNerve/CodeNerve.github.io). 
 
 This is a work in progress that will be updated every so often in concert with my other professional works.
 
@@ -9,3 +9,9 @@ Feel free to copy and modify the code as you wish, but this should only be used 
 Any likenesses of myself, including but not limited to my name and/or face are mine alone and can not be re-used.
 
 You can view the contents served here: [https://bryanhoffmaster.github.io/](https://bryanhoffmaster.github.io/)
+
+---
+
+### Future Feature Ideas:
+* [ ]  Make the CLI input _much_ more interactive, with a menu and such.
+* [ ]  Update the typing animation to "flow" a little more with highlights and fade-ins.

@@ -1,9 +1,3 @@
-// TODO: have a cool animation "flash" for each char "typed" out outside of the cli_input per row ---->
-// TODO: use emojis in your text?? Like add a fire emoji to skills that I'm great at.
-// TODO: Links are also coloring the asterisks preceding them.
-
-// NOTE: Inspired to do this from here: https://github.com/CodeNerve/CodeNerve.github.io/tree/master
-
 var getFileText = async (file) => {
     try {
         const response = await fetch(file);
