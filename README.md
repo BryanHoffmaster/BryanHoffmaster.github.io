@@ -8,3 +8,4 @@ Feel free to copy and modify the code as you wish, but this should only be used 
 
 Any likenesses of myself, including but not limited to my name and/or face are mine alone and can not be re-used.
 
+You can view the contents served here: [https://bryanhoffmaster.github.io/](https://bryanhoffmaster.github.io/)
