@@ -18,8 +18,8 @@ Slowly but surely I'll be producing web dev content for you all to enjoy!
 
 ### Some of my favorite quotes:
 
-- "Software engineers are modern day wizards, quite literally - they digitally scribe archaic runes into stones that then 
-compute whatever you want and do modern day magic."
+- "Software engineers are modern day wizards, quite literally - they digitally scribe archaic runes into 
+stones that then compute whatever you want and do modern day magic."
 
 - "Fear is a mile wide, and an inch deep."
 	
