@@ -1,13 +1,5 @@
-// TODO: Any click anywhere should put focus on the cli_input element!
 // TODO: have a cool animation "flash" for each char "typed" out outside of the cli_input per row ---->
-// TODO: how to handle generating inline links in text? Maybe just avoid them all together for this project...
-// TODO: set layout styles for the display and content elements
-// TODO: set style and coloring for the cli_input element
-// TODO: test various colors for your prompt and display elements
 // TODO: use emojis in your text?? Like add a fire emoji to skills that I'm great at.
-// TODO: "Headers" with markdown type formatting?
-// TODO: "Centered text" - will need a another line prefix, maybe.
-// TODO: Set max-width to 120ch on display and update text file lines to fit that requirement.
 // TODO: Links are also coloring the asterisks preceding them.
 
 // NOTE: Inspired to do this from here: https://github.com/CodeNerve/CodeNerve.github.io/tree/master
@@ -55,13 +47,18 @@ class CLI_Display {
         //       instead you need either a for..of loop or a Promise.all(array.map(line=> this.parseLine))
         for (const line of this.textLines) {
             await this.parseLine(line);
+            this.prompt_wrapper.scrollIntoView({ behavior:'smooth', block: 'center' });
         }
+
+        this.cli_input.addEventListener('keyup', this.handleInput);
+        this.display.addEventListener('click', this.inputFocus);
+        this.inputFocus(); // when all done, focus the input
     }
 
     parseLine = async (line) => {
-        await this.appendNewParagraph();
         const hasPrompt = line.split(' ')[0] === '#@#';
         const hasLink = line.split(' ')[0].startsWith('$!link');
+        const hasHeader = line.split(' ')[0].startsWith('###');
 
         if (hasLink) {
             await this.animateLinkText(line);
@@ -73,16 +70,33 @@ class CLI_Display {
             return
         }
 
+        if (hasHeader) {
+            await this.animateHeaderText(line);
+            return
+        }
+
         // continue to type out lines as given
         this.hidePrompt()
+        await this.appendNewParagraph();
         await this.typeOut(line, this.currentParagraph);
         this.showPrompt()
     }
 
+    animateHeaderText = async (text) => {
+        this.hidePrompt();
+        const restOfLine = text.split(' ').slice(1).join(' ');
+        await this.appendNewParagraph();
+        this.currentParagraph.classList.add('bold');
+        await this.typeOut(restOfLine, this.currentParagraph);
+        this.showPrompt();
+    }
+
     animatePromptText = async (text) => {
         const restOfLine = text.split(' ').slice(1).join(' ');
+        await this.actionWait()
         this.stopCursorBlink();
         await this.typeOutInCLI_Input(restOfLine)
+        await this.appendNewParagraph();
         this.cli_input.value = '';
         this.currentParagraph.innerHTML = this.getCLIPrompt() + restOfLine;
         this.startCursorBlink();
@@ -92,6 +106,7 @@ class CLI_Display {
         this.hidePrompt();
         const linkHref = line.split(' ')[0].split('=').slice(1)
         const restOfLine = line.split(' ').slice(1).join(' ');
+        await this.appendNewParagraph();
         const linkNode = this.buildLinkNode(linkHref);
         this.currentParagraph.appendChild(linkNode);
         await this.typeOut(restOfLine, linkNode);
@@ -106,7 +121,7 @@ class CLI_Display {
 
     showPrompt = () => {
         if (this.prompt_wrapper) {
-            this.prompt_wrapper.style.display = 'initial';
+            this.prompt_wrapper.style.display = 'flex';
         }
     }
 
@@ -166,7 +181,7 @@ class CLI_Display {
                     clearInterval(timer);
                     resolve();
                 }
-            }, 1);
+            }, 50);
         });
 
     }
@@ -179,11 +194,35 @@ class CLI_Display {
             } else {
                 input.setAttribute('placeholder', '|');
             }
-        }, 250);
+        }, 500);
     }
 
     stopCursorBlink = () => {
         this.cursorBlinkRef = clearInterval(this.cursorBlinkRef);
+        this.cli_input.setAttribute('placeholder', '');
+    }
+
+    inputFocus = () => {
+        this.stopCursorBlink();
+        this.cli_input.focus();
+    }
+    
+    actionWait = async (ms = 1500) => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve();
+            }, ms);
+        });
+    }
+
+    handleInput = async (e) => {
+        if (e.keyCode == 13) {
+            await this.appendNewParagraph()
+            await this.typeOut(this.cli_input.value, this.currentParagraph)
+            this.cli_input.value = '';
+            this.inputFocus()
+            this.prompt_wrapper.scrollIntoView({ behavior:'smooth', block: 'center' });
+        }
     }
 
     init = async () => {
@@ -191,6 +230,8 @@ class CLI_Display {
         this.text = fileText ?? '';
         this.textLines = this.text.split('\n');
         this.setRefs();
+        this.startCursorBlink()
+        await this.actionWait()
 
         if (this.textLines.length > 0) {
             this.loopTextLines();

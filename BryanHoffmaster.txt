@@ -2,53 +2,55 @@
 #@# cat introduction.txt
 
 
-Hey There! Welcome to my humble engineer page.
+### Hey There! Welcome to my humble engineer page.
 
-I'm an avid full stack web developer, with a passion for creating great looking web pages, user interfaces, APIs,
-and databases on cloud systems and more! 
+I'm an avid full stack/front-end web developer, with a passion for creating great looking web pages, user interfaces,
+APIs,and databases on cloud systems and more! 
 
-Most of my professional work has been done with internal systems for companies large and small, but I soon realized
+Most of my professional work encompassed web apps and networked systems for other companies , but I soon realized
 that I don't have much in the way of outreach and visible work for others to seen and enjoy. So I've decided to
-push that envelope and create my own personal website, of which this page is going to be the start!
+push that envelope and create content about my wizard skills 🧙‍♂️, of which this page is the start!
+
+Slowly but surely I'll be producing web dev content for you all to enjoy!
 
 #@# cat favorite_quotes.txt
 
 
-Some of my favorite quotes:
+### Some of my favorite quotes:
 
-"Fear is a mile wide, and an inch deep."
+- "Software engineers are modern day wizards, quite literally - they digitally scribe archaic runes into stones that then 
+compute whatever you want and do modern day magic."
+
+- "Fear is a mile wide, and an inch deep."
 	
-"If you can be in a bad mood for no reason, you can be in a good mood for no reason. 
+- "If you can be in a bad mood for no reason, you can be in a good mood for no reason. 
 If it's not going to change your life then it shouldn't change your mood. If the cost is peace of mind, don't buy it."
 	
-Your first workout will be bad.
-Your first podcast will be bad.
-Your first speech will be bad.
-Your first video will be bad.
-Your first ANYTHING will be bad.
-But you can't make your 100th without making your first.
-So put your ego aside, and start.
+- "Your first workout will be bad. Your first podcast will be bad. Your first speech will be bad. 
+Your first video will be bad. Your first ANYTHING will be bad. But you can't make your 100th without making your first.
+So put your ego aside, and start."
 
 #@# cat professional_works.txt
 
 
-What are my skill sets I hear you say? Let's take a look!
+### Where do my skill sets lay, I hear you say? Let's take a look!
 
-Full Stack Web Development - Angular (v7-17) - Angular Material - JS/HTML/CSS5
+Full Stack Web Development🔥 - Angular (v7-17)🔥 - Angular Material🔥 - JS/TS/HTML/CSS5🔥
 Git - GitLab - RxJS - C# - React & ReactNative - Team Leader and Educator
 CI/CD Workflows - Google Cloud Platform (GCP)/Firebase - jQuery
 Cypress/Jasmine E2E and Unit Testing - Node.js - RESTful APIs
 SQL/NoSQL - Linux/Windows Desktop and Server Administration
 Customer Service - Public Speaking
 
-Want to see some more of my work?
+### Want to see some more of my work?
 
-Fun Animations:
+### Fun Animations:
 
 $!link=animations/black-sun/index.html * Rotating Dark Star
 $!link=animations/glassmorphism/spinner-effects/index.html * Glassmorphism
+* More to come...
 	
-Professional Content:
+### Professional Content:
 
 $!link=https://www.linkedin.com/in/bryan-hoffmaster-75131256/ * LinkedIn Page
 $!link=https://github.com/BryanHoffmaster * Github Page
@@ -58,3 +60,4 @@ $!link=https://github.com/BryanHoffmaster/BryanHoffmaster.github.io * This resum
 * More to come...
 
 Cheers!
+

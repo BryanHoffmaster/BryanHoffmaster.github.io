@@ -10,6 +10,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	/* Just looks better with a little bit smaller root text size for the rest of the page. */
+	font-size: 15px;
 }
 
 :root {
@@ -57,6 +59,13 @@ p {
 	width: inherit;
 	max-width: inherit;
 	background: inherit;
+	display: flex;
+	width: 100%;
+}
+
+
+#cli_output{
+	margin-bottom: 5px;
 }
 
 .cli-prompt {
@@ -70,3 +79,17 @@ p {
 .prompt-tilde {
 	color: #ff0096;
 }
+
+#cli_input,
+#cli_input:focus,
+#cli_input:hover {
+	background: inherit;
+	border: none;
+	color: inherit;
+	outline: none;
+	font-family: inherit;
+	display:flex;
+	flex: 1 1 auto;
+	padding-left: 5px;
+}
+
