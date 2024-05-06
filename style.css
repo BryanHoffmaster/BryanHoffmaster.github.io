@@ -1,3 +1,12 @@
+@font-face {
+	font-family: 'Fira Code';
+	src: url('fonts/FiraCode-VariableFont_wght.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,10 +21,10 @@
 body {
 	background-color: #000;
 	color: #fff;
+	font-family: 'Fira Code', monospace;
 }
 
 
-/* TODO: Change this typeface */
 #console {
 	font-family: courier, monospace;
 	color: #fff;
