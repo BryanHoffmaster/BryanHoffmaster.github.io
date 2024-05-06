@@ -3,8 +3,7 @@
 	src: url('fonts/FiraCode-VariableFont_wght.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
-  }
-
+}
 
 
 * {
@@ -19,20 +18,23 @@
 
 /* TODO: Grid/Flexbox layout - fill content */
 body {
-	background-color: #000;
-	color: #fff;
+	color: #ffffffd9;
 	font-family: 'Fira Code', monospace;
+	/* min-height: 100vh; */
 }
 
+#display {
+	display: grid;
+	justify-content: center;
+	background: #1e1d1d;
+	min-height: 100vh;
+}
 
-#console {
-	font-family: courier, monospace;
-	color: #fff;
-	width:750px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:100px;
-	font-size:14px;
+#content {
+	padding: 3px;
+	width: 120ch;
+	max-width: 120ch;
+	background: #100F0F;
 }
 
 a {
@@ -42,6 +44,19 @@ a {
 
 p {
 	min-height: 1ch;
+}
+
+.bold {
+	font-weight: bold;
+	font-size: 1.05rem;
+	line-height: 1.5rem;
+}
+
+#prompt-wrapper {
+	padding: inherit;
+	width: inherit;
+	max-width: inherit;
+	background: inherit;
 }
 
 .cli-prompt {
@@ -54,22 +69,4 @@ p {
 
 .prompt-tilde {
 	color: #ff0096;
-}
-
-.italic {
-	font-style: italic;
-}
-
-.slow-change-animation {
-    	animation: change 1s;
-}
-
-#op{
-    	color: #888888
-}
-
-@keyframes change {
-    	0%  { color:  #0f0; }
-    	50% { color:  #0f0; }
-    	99% { color: black; }
 }

@@ -1,6 +1,7 @@
 #@# cd BryanHoffmaster/Engineer_Files
 #@# cat introduction.txt
 
+
 Hey There! Welcome to my humble engineer page.
 
 I'm an avid full stack web developer, with a passion for creating great looking web pages, user interfaces, APIs,
@@ -10,16 +11,8 @@ Most of my professional work has been done with internal systems for companies l
 that I don't have much in the way of outreach and visible work for others to seen and enjoy. So I've decided to
 push that envelope and create my own personal website, of which this page is going to be the start!
 
-What are my skill sets I hear you say? Let's take a look!
-
-Full Stack Web Development - Angular (v7-17) - Angular Material - JS/HTML/CSS5
-Git - GitLab - RxJS - C# - React & ReactNative - Team Leader and Educator
-CI/CD Workflows - Google Cloud Platform (GCP)/Firebase - jQuery
-Cypress/Jasmine E2E and Unit Testing - Node.js - RESTful APIs
-SQL/NoSQL - Linux/Windows Desktop and Server Administration 
-Customer Service - Public Speaking
-
 #@# cat favorite_quotes.txt
+
 
 Some of my favorite quotes:
 
@@ -38,18 +31,30 @@ So put your ego aside, and start.
 
 #@# cat professional_works.txt
 
+
+What are my skill sets I hear you say? Let's take a look!
+
+Full Stack Web Development - Angular (v7-17) - Angular Material - JS/HTML/CSS5
+Git - GitLab - RxJS - C# - React & ReactNative - Team Leader and Educator
+CI/CD Workflows - Google Cloud Platform (GCP)/Firebase - jQuery
+Cypress/Jasmine E2E and Unit Testing - Node.js - RESTful APIs
+SQL/NoSQL - Linux/Windows Desktop and Server Administration
+Customer Service - Public Speaking
+
 Want to see some more of my work?
 
 Fun Animations:
+
 $!link=animations/black-sun/index.html * Rotating Dark Star
 $!link=animations/glassmorphism/spinner-effects/index.html * Glassmorphism
 	
 Professional Content:
 
-* Professional Website (UNDER CONSTRUCTION)
-* Blog Posts (UNDER DEVELOPMENT)
+$!link=https://www.linkedin.com/in/bryan-hoffmaster-75131256/ * LinkedIn Page
 $!link=https://github.com/BryanHoffmaster * Github Page
 $!link=https://github.com/BryanHoffmaster/BryanHoffmaster.github.io * This resume type web page
+* Professional Website (UNDER CONSTRUCTION)
+* Blog Posts (UNDER DEVELOPMENT)
 * More to come...
 
 Cheers!

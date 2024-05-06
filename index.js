@@ -1,6 +1,5 @@
 // TODO: Any click anywhere should put focus on the cli_input element!
 // TODO: have a cool animation "flash" for each char "typed" out outside of the cli_input per row ---->
-// TODO: Set font-family
 // TODO: how to handle generating inline links in text? Maybe just avoid them all together for this project...
 // TODO: set layout styles for the display and content elements
 // TODO: set style and coloring for the cli_input element
@@ -9,6 +8,7 @@
 // TODO: "Headers" with markdown type formatting?
 // TODO: "Centered text" - will need a another line prefix, maybe.
 // TODO: Set max-width to 120ch on display and update text file lines to fit that requirement.
+// TODO: Links are also coloring the asterisks preceding them.
 
 // NOTE: Inspired to do this from here: https://github.com/CodeNerve/CodeNerve.github.io/tree/master
 
@@ -32,7 +32,7 @@ class CLI_Display {
     prompt = null;
     prompt_wrapper = null;
     display = null;
-    content = null;
+    cli_output = null;
     currentParagraph = null;
 
     text = '';
@@ -115,7 +115,7 @@ class CLI_Display {
         this.prompt = document.getElementById('prompt');
         this.prompt_wrapper = document.getElementById('prompt-wrapper');
         this.display = document.getElementById('display');
-        this.content = document.getElementById('content');
+        this.cli_output = document.getElementById('cli_output');
     }
 
     getCLIPrompt = () => {
@@ -136,7 +136,7 @@ class CLI_Display {
 
     appendNewParagraph = async () => {
         var newParagraph = document.createElement('p');
-        this.content.appendChild(newParagraph);
+        this.cli_output.appendChild(newParagraph);
         this.currentParagraph = newParagraph;
     }
 
